@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "etl-docker-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Lucas <lucas-mvs@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.0.0"  # Adicione o pandas
+requests = "^2.31.0"  # Adicione o requests
+sqlalchemy = "^2.0.0"  # Adicione o SQLAlchemy
+psycopg2-binary = "^2.9.10"  # Use psycopg2-binary para evitar problemas de compilação
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
